@@ -71,14 +71,14 @@ section {
   transform: scale(1.1);
 } */
 
-#home {
+/* #home {
   /* display: flex;
   justify-content: center;
   align-items: center;
   gap: 100px; */
-  background-image: url(/src/imgs/espaco1.jpg);
+  /* background-image: url(/src/imgs/espaco1.jpg);
   background-size: cover;
-}
+} */
 
 /* .home_info {
   display: flex;
@@ -107,7 +107,7 @@ section {
   color: #0483c9;
 } */
 
-.info_buttons button,
+/* .info_buttons button, */
 .project_buttons a button {
   border: 1px solid #f0f0f0;
   background-color: black;
@@ -121,7 +121,7 @@ section {
   transition: 300ms;
 }
 
-.info_buttons button:hover,
+/* .info_buttons button:hover, */
 .project_buttons a button:hover {
   border: 1px solid black;
   background-color: #f0f0f0;

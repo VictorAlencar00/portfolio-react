@@ -1,13 +1,14 @@
 import profileImage from './imgs/profileImage.jpg'
 import githubIcon from './imgs/githubIcon.png'
 import linkedinIcon from './imgs/linkedin-icon.png'
+import spaceBackGround from './imgs/space-backGround.jpg'
 
 export default function Home() {
   return (
     <section 
       id="home" 
       className="flex justify-center items-center gap-24 bg-cover"
-      // style= {{backgroundImage: `url(/imgs/espaco1.jpg)`}}
+      style={{backgroundImage: `url(${spaceBackGround})`}}
       >
       <img className="h-96 w-96 rounded-full border-solid border-white border-2 hover:scale-110 transition-all" src={profileImage} alt="profile" />
       <div className="flex flex-col gap-5">
