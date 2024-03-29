@@ -19,9 +19,9 @@ export default function Home() {
             <span className='text-cyan-500'>Front-End</span>
           </h3>
         </div>
-        <div className='flex gap-1'>
-          <button className=" bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid">Baixar Currículo</button>
-          <button className=" bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid">Contato</button>
+        <div className='flex gap-2'>
+          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all">Baixar Currículo</button>
+          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all">Contato</button>
         </div>
         <div className="flex gap-1">
           <a
@@ -29,14 +29,14 @@ export default function Home() {
             rel="noopener noreferrer"
             href="https://github.com/VictorAlencar00"
           >
-            <img className='w-12 h-12' src={githubIcon} alt="user github" />
+            <img className='w-12 h-12 hover:scale-110 transition-all' src={githubIcon} alt="user github" />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
             href="https://www.linkedin.com/in/victor-alencar-9a80ba244/"
           >
-            <img className='w-12 h-12'src={linkedinIcon} alt="user linkedin" />
+            <img className='w-12 h-12 hover:scale-110 transition-all'src={linkedinIcon} alt="user linkedin" />
           </a>
         </div>
       </div>
