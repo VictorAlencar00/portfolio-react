@@ -43,6 +43,7 @@ body {
   gap: 50px;
 }
 
+#header h1 a,
 #header nav a {
   color: inherit;
   font-size: 20px;
@@ -58,53 +59,53 @@ section {
   height: 100vh;
 }
 
-.home-picture {
+/* .home-picture {
   height: 400px;
   width: 400px;
   border-radius: 50%;
   border: #ffffffda 2px solid;
   transition: 300ms linear;
-}
+} */
 
-.home-picture:hover {
+/* .home-picture:hover {
   transform: scale(1.1);
-}
+} */
 
 #home {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 100px; */
   background-image: url(/src/imgs/espaco1.jpg);
   background-size: cover;
 }
 
-.home_info {
+/* .home_info {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
+} */
 
-.info_description {
+/* .info_description {
   font-size: 28px;
-}
-
+} */
+/* 
 .info_description p {
   font-size: 18px;
-}
+} */
 
-.info_description h2 {
+/* .info_description h2 {
   font-size: 50px;
-}
+} */
 
-.info_description h3 {
+/* .info_description h3 {
   font-size: 30px;
   visibility: calc(50%);
-}
+} */
 
-.info_description h3 span {
+/* .info_description h3 span {
   color: #0483c9;
-}
+} */
 
 .info_buttons button,
 .project_buttons a button {
@@ -129,8 +130,8 @@ section {
 }
 
 .info_redirect a img {
-  width: 50px;
-  height: 50px;
+  /* width: 50px;
+  height: 50px; */
   transition: 300ms;
 }
 
