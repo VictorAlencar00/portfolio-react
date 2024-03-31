@@ -17,7 +17,7 @@ export default function Home() {
           <h2 className='text-5xl'>Victor de S. Alencar</h2>
           <h3 className='text-2x2'>
             Desenvolvedor 
-            <span className='text-cyan-500'>Front-End</span>
+            <span className='text-cyan-500 ml-2'>Front-End</span>
           </h3>
         </div>
         <div className='flex gap-2'>

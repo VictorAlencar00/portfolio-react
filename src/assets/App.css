@@ -59,55 +59,6 @@ section {
   height: 100vh;
 }
 
-/* .home-picture {
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  border: #ffffffda 2px solid;
-  transition: 300ms linear;
-} */
-
-/* .home-picture:hover {
-  transform: scale(1.1);
-} */
-
-/* #home {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px; */
-  /* background-image: url(/src/imgs/espaco1.jpg);
-  background-size: cover;
-} */
-
-/* .home_info {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-} */
-
-/* .info_description {
-  font-size: 28px;
-} */
-/* 
-.info_description p {
-  font-size: 18px;
-} */
-
-/* .info_description h2 {
-  font-size: 50px;
-} */
-
-/* .info_description h3 {
-  font-size: 30px;
-  visibility: calc(50%);
-} */
-
-/* .info_description h3 span {
-  color: #0483c9;
-} */
-
-/* .info_buttons button, */
 .project_buttons a button {
   border: 1px solid #f0f0f0;
   background-color: black;
@@ -121,64 +72,11 @@ section {
   transition: 300ms;
 }
 
-/* .info_buttons button:hover, */
 .project_buttons a button:hover {
   border: 1px solid black;
   background-color: #f0f0f0;
   color: black;
   transform: scale(1.1);
-}
-
-.info_redirect a img {
-  /* width: 50px;
-  height: 50px; */
-  transition: 300ms;
-}
-
-.info_redirect a img:hover {
-  transform: scale(1.1);
-}
-
-#about {
-  background: linear-gradient(125deg, black, rgb(45, 45, 45));
-}
-
-#about,
-.about_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about_container{
-  border-radius: 20px;
-  width: 950px;
-  height: 450px;
-  background-color: rgb(25, 25, 25);
-}
-
-.about_content {
-  border-radius: 20px;
-  width: 900px;
-  height: 400px;
-  background-color: rgb(33, 33, 33);
-  box-shadow: rgb(13, 12, 12) 0px 0px 10px 3px;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.content_description {
-  width: 60%;
-}
-
-.content_stacks {
-  display: flex;
-  flex-direction: column;
-}
-
-.stacks_icons img {
-  width: 40px;
 }
 
 #projects {
