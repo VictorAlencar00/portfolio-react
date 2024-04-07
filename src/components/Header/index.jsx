@@ -1,14 +1,35 @@
-export default function Header() {
-  return (
-    <header id="header">
-      <h1 id="title">
-        <a href="#home">Meu portfólio.</a>
-      </h1>
-      <nav>
-        <a href="#about">Sobre mim</a>
-        <a href="#projects">Meus projetos</a>
-        <a href="#contacts">Contatos</a>
-      </nav>
-    </header>
-  );
+import React, { useState } from 'react';
+
+const Header = () => {
+    const [isSticky, setIsSticky] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 0 ) {
+            setIsSticky(true);
+        } else {
+            setIsSticky(false);
+        }
+    }
+    
+    React.useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return() => {
+            window.removeEventListener('scroll', handleScroll)
+        }
+    }, []);
+
+    return (
+        <header className={`flex w-full h-24 p-5 items-center justify-between ${isSticky ? 'fixed' : 'absolute' }`}>
+            <h1 id="title">
+                <a className='transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit' href="#home">Meu portfólio.</a>
+            </h1>
+            <nav className='flex gap-12'>
+                <a className='transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit' href="#about">Sobre mim</a>
+                <a className='transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit' href="#projects">Meus projetos</a>
+                <a className='transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit' href="#contacts">Contatos</a>
+            </nav>
+      </header>
+    )
 }
+
+export default Header;
