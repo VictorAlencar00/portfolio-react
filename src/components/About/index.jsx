@@ -8,7 +8,7 @@ import tailwindIcon from './imgs/tailwind-logo.png'
 export default function About() {
   return (
     <section className='flex items-center justify-center bg-gradient-to-br from-black to-aboutBg'>
-        <div className="flex content-between bg-aboutContentBg shadow-aboutContentShadow p-5 rounded-3xl shadow-aboutContentBoxShadow gap-8"
+        <div className="flex content-between bg-grayBg shadow-aboutContentShadow p-5 rounded-3xl shadow-aboutContentBoxShadow gap-8"
         style={{width: '900px', height: '400px'}}>
           <div class="w-3/5">
             Sou um desenvolvedor FrontEnd cursante de Análise e Desenvolvimento
