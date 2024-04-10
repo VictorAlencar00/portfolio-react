@@ -18,7 +18,7 @@ module.exports = {
        'aboutContentBoxShadow': '0px 0px 10px 3px rgb(13, 12, 12)'
       },
       height: {
-        'projectHeight': '420px'
+        'projectHeight': '460px'
       }
     },
   },
