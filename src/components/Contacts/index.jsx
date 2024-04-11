@@ -6,16 +6,16 @@ import telegramIcon from './imgs/telegram-logo.png'
 
 export default function Contacts() {
   return (
-    <section id='contacts' className="flex flex-col justify-center items-center gap-10 bg-contactsBg p-14 h-full">
-      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-96 rounded-md justify-center'>
+    <section id='contacts' className="flex flex-col justify-center items-center gap-10 bg-softGrayBg p-14 h-full">
+      <a href='wait' className="flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center">
         <img className='w-9' src={whatsappIcon} alt="" /> Whatsapp</a>
-      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-96 rounded-md justify-center'>
+      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center'>
         <img className='w-9' src={linkedinIcon} alt="" /> Linkedin</a>
-      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-96 rounded-md justify-center'>
+      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center'>
         <img className='w-9' src={gmailIcon} alt="" /> Gmail</a>
-      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-96 rounded-md justify-center'>
+      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center'>
         <img className='w-9' src={githubIcon} alt="" /> Github</a>
-      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-96 rounded-md justify-center'>
+      <a href='wait' className='flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center'>
         <img className='w-9' src={telegramIcon} alt="" /> Telegram</a>
     </section>
   );
