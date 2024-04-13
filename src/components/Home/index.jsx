@@ -34,9 +34,9 @@ export default function Home() {
           </h3>
         </div>
         <div className='flex gap-2 justify-center sm:justify-normal'>
-          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hidden sm:block">Baixar Currículo</button>
-          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden">Currículo</button>
-          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all">Contato</button>
+          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hidden sm:block hover:bg-softWhite hover:text-black">Baixar Currículo</button>
+          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black">Currículo</button>
+          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black">Contato</button>
         </div>
         <div className="flex gap-1 justify-center sm:justify-normal">
           <a

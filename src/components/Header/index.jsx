@@ -19,7 +19,7 @@ const Header = () => {
     }, []);
 
     return (
-        <header className={`w-full h-24 p-5 items-center justify-between hidden sm:flex  ${isSticky ? 'fixed' : 'absolute' }`}>
+        <header className={`w-full h-24 p-5 items-center justify-between hidden sm:flex  ${isSticky ? 'fixed ' : 'absolute' }`}>
             <h1 id="title">
                 <a className='transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit' href="#home">Meu portfólio.</a>
             </h1>
