@@ -6,34 +6,31 @@
     flex-direction: column;
     gap: 0;
   }
-  .home-picture {
-    width: 80vw;
-    height: 80vw;
-  }
   #about {
     justify-content: center;
     padding: 10px;
   }
-  .about_container {
-    width: 100vw;
-    height: 100vh;
-  }
-  .about_content {
-    width: 90%;
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-  }
   #projects {
     height: 1500px;
   }
-  .projects_nav {
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: start;
+}
+@media screen and (max-width: 340px) {
+  .technologies {
+    gap: 0;
   }
-  .not-shown {
-    transform: translateX(-50%);
-    opacity: 0;
+  .profile_image {
+    width: 225px;
+    height: 225px;
+  }
+  #about {
+    height: 120vh;
+  }
+  .project {
+    height: 345px;
+    width: 286px;
+  }
+  .project img {
+    width: 225px;
+    height: 225px;
   }
 }

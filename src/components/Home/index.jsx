@@ -21,14 +21,14 @@ export default function Home() {
       style={{ backgroundImage: `url(${spaceBackGround})` }}
     >
       <img
-        className="h-64 w-64 lg:h-96 lg:w-96 rounded-full border-solid border-white border-2 hover:scale-110 transition-all"
+        className="h-64 w-64 lg:h-96 lg:w-96 rounded-full border-solid border-white border-2 hover:scale-110 transition-all profile_image md:mx-4 lg:mx-0"
         src={profileImage}
         alt="profile"
       />
       <div className="flex flex-col gap-5 ">
         <div className="sm:text-3xl">
           <p className="hidden text-sm sm:text-lg">Olá, me chamo</p>
-          <h2 className="text-center text-2xl sm:text-5xl">
+          <h2 className="text-center text-2xl sm:text-3xl lg:text-5xl">
             Victor de S. Alencar
           </h2>
           <p className="hidden text-sm sm:text-lg">e sou um</p>
@@ -47,9 +47,12 @@ export default function Home() {
           <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black">
             Currículo
           </button>
-          <button className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black">
+          <a
+            href="#contacts"
+            className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black"
+          >
             Contato
-          </button>
+          </a>
         </div>
         <div className="flex gap-1 justify-center sm:justify-normal">
           <a

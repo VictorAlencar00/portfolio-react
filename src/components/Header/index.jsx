@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-24 p-5 items-center justify-between hidden sm:flex  ${isSticky ? 'fixed ' : 'absolute'}`}
+      className={`w-full h-24 p-5 items-center justify-between hidden sm:flex  ${isSticky ? 'fixed z-50' : 'absolute'}`}
     >
       <h1 id="title">
         <a

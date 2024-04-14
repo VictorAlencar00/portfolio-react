@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex items-center justify-center bg-gradient-to-br from-black to-aboutBg h-100vh"
+      className="flex items-center justify-center bg-gradient-to-br from-black to-aboutBg h-100vh p-6 md:h-70vh lg:h-100vh lg:p-0"
     >
       <div className="flex flex-col content-between bg-grayBg shadow-aboutContentShadow p-6 lg:p-12 rounded-3xl shadow-aboutContentBoxShadow gap-14 lg:w-aboutWidth lg:h-aboutHeight">
         <div>
@@ -30,7 +30,7 @@ export default function About() {
         </div>
         <div class="w-full text-center flex flex-col gap-4">
           <span>Meus conhecimentos:</span>
-          <div className="w-full justify-center flex gap-2">
+          <div className="w-full justify-center flex gap-2 technologies">
             <a
               target="_blank"
               href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"

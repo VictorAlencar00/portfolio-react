@@ -6,15 +6,15 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center p-3 md:h-100vh bg-gradient-to-r from-darkPurple to-lightPurple"
+      className="flex flex-col items-center p-3 lg:h-100vh bg-gradient-to-r from-darkPurple to-lightPurple md:pb-9 lg:pb-0"
     >
       <div className="w-52 text-center text-3xl p-12">
         <h1>Meus Projetos</h1>
       </div>
-      <nav class="h-full flex flex-col md:flex md:flex-row gap-12 justify-center items-center">
-        <div className="bg-grayBg animated_object w-80 h-96 md:w-96 md:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all">
+      <nav class="h-full flex flex-col md:flex lg:flex-row gap-12 justify-center items-center">
+        <div className="bg-grayBg w-80 h-96 md:w-projectMdWidth md:h-projectMdHeight lg:w-96 lg:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all project">
           <img
-            className="w-64 h-64 md:w-72 md:h-72 rounded-3xl"
+            className="w-64 h-64 md:w-374px md:h-374px lg:w-72 lg:h-72 rounded-3xl"
             src={trainee}
             alt=""
           />
@@ -32,9 +32,9 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="bg-grayBg animated_object w-80 h-96 md:w-96 md:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all">
+        <div className="bg-grayBg w-80 h-96 md:w-projectMdWidth md:h-projectMdHeight lg:w-96 lg:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all project">
           <img
-            className="w-64 h-64 md:w-72 md:h-72 rounded-3xl"
+            className="w-64 h-64 md:w-374px md:h-374px lg:w-72 lg:h-72 rounded-3xl"
             src={netflix}
             alt=""
           />
@@ -52,9 +52,9 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="bg-grayBg animated_object w-80 h-96 md:w-96 md:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all">
+        <div className="bg-grayBg w-80 h-96 md:w-projectMdWidth md:h-projectMdHeight lg:w-96 lg:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-110 transition-all project">
           <img
-            className="w-64 h-64 md:w-72 md:h-72 rounded-3xl"
+            className="w-64 h-64 md:w-374px md:h-374px lg:w-72 lg:h-72 rounded-3xl"
             src={milao}
             alt=""
           />
