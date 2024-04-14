@@ -13,16 +13,16 @@ export default function About() {
     >
       <div className="flex flex-col content-between bg-grayBg shadow-aboutContentShadow p-6 lg:p-12 rounded-3xl shadow-aboutContentBoxShadow gap-14 lg:w-aboutWidth lg:h-aboutHeight">
         <div>
-          <p className="leading-5 indent-2 mb-1">
+          <p className="leading-5 indent-5 mb-1">
             Sou um desenvolvedor Front-End fluente em inglês e estudante de
             francês, cursante de Análise e Desenvolvimento de sistemas, com
             previsão de conclusão em julho de 2025.
           </p>
-          <p className="leading-5 indent-2 mb-1">
+          <p className="leading-5 indent-5 mb-1">
             Comecei os meus estudos de desenvolvimento web em 2023, e logo
             desenvolvi projetos em grupo.
           </p>
-          <p className="leading-5 indent-2">
+          <p className="leading-5 indent-5">
             Meu foco atual é em aprimorar minhas habilidades nas funcionalidades
             e bibliotecas do React, e estou estudando Next.js para desenvolver
             projetos React, como este portfólio.
