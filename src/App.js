@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import './index.css'
+import './index.css';
 import './assets/App.css';
 import './assets/Media.css';
 import About from './components/About';
