@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 export default function Home() {
   const [text, cursor] = useTypewriter({
-    words: ['Front-End'],
+    words: ['Front-End', 'React'],
     loop: true,
     typeSpeed: 120,
     deleteSpeed: 120,
