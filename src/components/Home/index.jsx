@@ -27,7 +27,7 @@ export default function Home() {
       />
       <div className="flex flex-col gap-5 ">
         <div className="sm:text-3xl">
-          <p className="hidden text-sm sm:text-lg">Olá, me chamo</p>
+          <p className="hidden text-sm sm:text-l">Olá, me chamo</p>
           <h2 className="text-center text-2xl sm:text-3xl lg:text-5xl">
             Victor de S. Alencar
           </h2>
