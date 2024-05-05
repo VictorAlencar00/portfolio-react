@@ -8,7 +8,7 @@ import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 export default function Home() {
   const [text, cursor] = useTypewriter({
-    words: ['Front-End', 'React'],
+    words: ['Front-End', 'React', 'Angular'],
     loop: true,
     typeSpeed: 120,
     deleteSpeed: 120,
@@ -34,7 +34,9 @@ export default function Home() {
           <p className="hidden text-sm sm:text-lg">e sou um</p>
           <h3 className="w-80 text-2xl sm:text-2x2">
             Desenvolvedor
-            <span className="text-cyan-500 ml-2">
+            <span
+              className={`text-cyan-500 ml-2 ${text[0] === 'A' ? 'text-angularColor' : ''}`}
+            >
               {text}
               <Cursor cursorBlinking={cursor} />
             </span>
