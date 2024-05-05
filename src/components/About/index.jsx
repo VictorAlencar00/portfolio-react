@@ -4,6 +4,8 @@ import htmlIcon from './imgs/htmlicon.png';
 import javascriptIcon from './imgs/jsnewicon.png';
 import cssIcon from './imgs/cssicon.png';
 import tailwindIcon from './imgs/tailwind-logo.png';
+import typescriptIcon from './imgs/typescript-icon.png';
+import angularIcon from './imgs/angular-icon.jpg';
 
 export default function About() {
   return (
@@ -14,23 +16,16 @@ export default function About() {
       <div className="flex flex-col content-between bg-grayBg shadow-aboutContentShadow p-6 lg:p-12 rounded-3xl shadow-aboutContentBoxShadow gap-14 lg:w-aboutWidth lg:h-aboutHeight">
         <div>
           <p className="leading-5 indent-5 mb-1">
-            Sou um desenvolvedor Front-End fluente em inglês e estudante de
-            francês, cursante de Análise e Desenvolvimento de sistemas, com
-            previsão de conclusão em julho de 2025.
-          </p>
-          <p className="leading-5 indent-5 mb-1">
+            Sou um desenvolvedor Front-End fluente em inglês, cursante de
+            Análise e Desenvolvimento de sistemas e estudante de francês.
             Comecei os meus estudos de desenvolvimento web em 2023, e logo
-            desenvolvi projetos em grupo.
-          </p>
-          <p className="leading-5 indent-5">
-            Meu foco atual é em aprimorar minhas habilidades nas funcionalidades
-            e bibliotecas do React, e estou estudando Next.js para desenvolver
-            projetos React, como este portfólio.
+            participei de projetos front-end colaborativos. Tenho conhecimento
+            em React, e atualmente estou focado no amplo ecossistema Angular.
           </p>
         </div>
         <div class="w-full text-center flex flex-col gap-4">
-          <span>Meus conhecimentos:</span>
-          <div className="w-full justify-center flex gap-2 technologies">
+          <span>Tecnologias:</span>
+          <div className="w-full justify-center flex gap-2 sm:gap-3 technologies">
             <a
               target="_blank"
               href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
@@ -95,6 +90,28 @@ export default function About() {
                 className="h-9 w-10 hover:scale-125 transition-all"
                 src={reactIcon}
                 alt="React Logo"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://angular.io"
+              rel="nonopenner referer noreferrer"
+            >
+              <img
+                className="h-10 w-10 hover:scale-125 transition-all"
+                src={angularIcon}
+                alt="Angular Icon"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.typescriptlang.org"
+              rel="nonopenner referer noreferrer"
+            >
+              <img
+                className="w-10 h-10 hover:scale-125 transition-all"
+                src={typescriptIcon}
+                alt="Typescript Logo"
               />
             </a>
           </div>

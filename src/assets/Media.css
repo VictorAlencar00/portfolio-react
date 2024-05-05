@@ -34,3 +34,13 @@
     height: 225px;
   }
 }
+@media screen and (max-width: 640px) {
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .technologies img {
+    flex-basis: calc(25% - 1rem);
+  }
+}
