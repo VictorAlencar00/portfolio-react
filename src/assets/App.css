@@ -17,3 +17,8 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #edf4f5;
 }
+
+.text-angularColor {
+  color: #dd0031;
+}
+/* it was not working with tailwind */

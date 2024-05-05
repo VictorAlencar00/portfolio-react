@@ -35,7 +35,7 @@ export default function Home() {
           <h3 className="w-80 text-2xl sm:text-2x2">
             Desenvolvedor
             <span
-              className={`text-cyan-500 ml-2 ${text[0] === 'A' ? 'text-angularColor' : ''}`}
+              className={`text-cyan-500 ml-2 ${text[0] === 'F' ? 'text-white' : ''} ${text[0] === 'A' ? 'text-angularColor' : ''}`}
             >
               {text}
               <Cursor cursorBlinking={cursor} />

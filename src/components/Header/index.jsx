@@ -20,16 +20,8 @@ const Header = () => {
 
   return (
     <header
-      className={`w-full h-24 p-5 items-center justify-between hidden sm:flex  ${isSticky ? 'fixed z-50' : 'absolute'}`}
+      className={`w-full h-24 p-5 items-center justify-end hidden sm:flex  ${isSticky ? 'fixed z-50' : 'absolute'}`}
     >
-      <h1 id="title">
-        <a
-          className="transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit"
-          href="#home"
-        >
-          Meu portfólio.
-        </a>
-      </h1>
       <nav className="flex gap-12">
         <a
           className="transition-all hover:scale-110  hover:text-cyan-500 text-xl text-inherit"

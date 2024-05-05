@@ -15,7 +15,6 @@ module.exports = {
         softWhite: '#f0f0f0',
         darkPurple: '#001848',
         lightPurple: '#301860',
-        angularColor: 'rgb(221, 0, 49)',
       },
       boxShadow: {
         aboutContentBoxShadow: '0px 0px 10px 3px rgb(13, 12, 12)',
