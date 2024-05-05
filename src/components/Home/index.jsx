@@ -45,24 +45,24 @@ export default function Home() {
             href="https://drive.google.com/file/d/1Bbcm1iDH6_xd99Wb9YDahf5La6Ih1do7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hidden hover:bg-softWhite hover:text-black sm:flex items-center"
+            className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all hidden hover:bg-softWhite hover:text-black sm:flex items-center"
           >
-            Baixar Currículo
+            <span className="p-2">Baixar Currículo</span>
           </a>
           <a
             href="https://drive.google.com/file/d/1Bbcm1iDH6_xd99Wb9YDahf5La6Ih1do7/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black flex items-center"
+            className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black flex items-center"
           >
-            Currículo
+            <span className="p-2">Currículo</span>
           </a>
           <a
             href="#contacts"
-            className="bg-zinc-950 text-white h-12 p-2 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black
+            className="bg-zinc-950 text-white p-1 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black
             flex items-center"
           >
-            Contato
+            <span className="p-2">Contato</span>
           </a>
         </div>
         <div className="flex gap-1 justify-center sm:justify-normal">
