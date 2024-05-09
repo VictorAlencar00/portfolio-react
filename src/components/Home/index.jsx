@@ -52,7 +52,7 @@ export default function Home() {
             <span className="p-2">Baixar Currículo</span>
           </a>
           <a
-            href="https://drive.google.com/file/d/1Bbcm1iDH6_xd99Wb9YDahf5La6Ih1do7/view?usp=sharing"
+            href="https://drive.google.com/file/d/1YeYMrqsohWFdXgn9MQlieE6IbWOP2lj3/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black flex items-center"
