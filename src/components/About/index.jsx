@@ -6,6 +6,8 @@ import cssIcon from './imgs/cssicon.png';
 import tailwindIcon from './imgs/tailwind-logo.png';
 import typescriptIcon from './imgs/typescript-icon.png';
 import angularIcon from './imgs/angular-icon.jpg';
+import javaIcon from './imgs/javaIcon.png';
+import springIcon from './imgs/springIcon.png';
 
 export default function About() {
   return (
@@ -16,11 +18,11 @@ export default function About() {
       <div className="flex flex-col content-between bg-grayBg shadow-aboutContentShadow p-6 lg:p-12 rounded-3xl shadow-aboutContentBoxShadow gap-14 lg:w-aboutWidth lg:h-aboutHeight">
         <div>
           <p className="leading-5 indent-5 mb-1">
-            Sou um desenvolvedor Front-End fluente em inglês, cursante de
-            Análise e Desenvolvimento de sistemas e estudante de francês.
-            Comecei os meus estudos de desenvolvimento web em 2023, e logo
-            participei de projetos front-end colaborativos. Tenho conhecimento
-            em React, e atualmente estou focado no amplo ecossistema Angular.
+            Sou um desenvolvedor fluente em inglês, cursante de Análise e
+            Desenvolvimento de sistemas e estudante de francês. Comecei os meus
+            estudos de desenvolvimento web em 2023, e logo participei de
+            projetos front-end colaborativos. Tenho conhecimento em React,
+            Angular e APIS com Spring Boot.
           </p>
         </div>
         <div class="w-full text-center flex flex-col gap-4">
@@ -112,6 +114,28 @@ export default function About() {
                 className="w-10 h-10 hover:scale-125 transition-all"
                 src={typescriptIcon}
                 alt="Typescript Logo"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.oracle.com/br/java/technologies/downloads/"
+              rel="nonopenner referer noreferrer"
+            >
+              <img
+                className="w-10 h-10 hover:scale-125 transition-all"
+                src={javaIcon}
+                alt="Java Developer Kit"
+              />
+            </a>
+            <a
+              target="_blank"
+              href="https://spring.io"
+              rel="nonopenner referer noreferrer"
+            >
+              <img
+                className="w-10 h-10 hover:scale-125 transition-all"
+                src={springIcon}
+                alt="Spring"
               />
             </a>
           </div>
