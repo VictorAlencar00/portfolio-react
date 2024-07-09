@@ -1,26 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Header = () => {
-  const [isSticky, setIsSticky] = useState(false);
+  // const [isSticky, setIsSticky] = useState(false);
 
-  const handleScroll = () => {
-    if (window.scrollY > 0) {
-      setIsSticky(true);
-    } else {
-      setIsSticky(false);
-    }
-  };
+  // const handleScroll = () => {
+  //   if (window.scrollY > 0) {
+  //     setIsSticky(true);
+  //   } else {
+  //     setIsSticky(false);
+  //   }
+  // };
 
-  React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  // React.useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => {
+  //     window.removeEventListener('scroll', handleScroll);
+  //   };
+  // }, []);
 
   return (
     <header
-      className={`w-full h-24 p-5 items-center justify-end hidden sm:flex  ${isSticky ? 'fixed z-50' : 'absolute'}`}
+      className={`w-full h-24 p-5 items-center justify-end hidden sm:flex absolute`}
     >
       <nav className="flex gap-12">
         <a
