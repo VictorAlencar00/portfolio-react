@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         <div className="flex gap-2 justify-center sm:justify-normal">
           <a
-            href="https://drive.google.com/file/d/1F-U22Ek2UU5O17gjVhYZFwYJ8A6uvgU_/view?usp=sharing"
+            href="https://drive.google.com/file/d/137QVrUsCcmYvKrlEC9lzlakZUsBFbXBU/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all hidden hover:bg-softWhite hover:text-black sm:flex items-center"
