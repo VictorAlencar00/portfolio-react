@@ -21,7 +21,7 @@ export default function Contacts() {
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://www.linkedin.com/in/victor-alencar-9a80ba244/"
+        href="https://www.linkedin.com/in/victor-de-sousa-alencar-9a80ba244"
         className="flex items-center gap-3 bg-aboutBg p-2 w-70vw sm:w-96 rounded-md justify-center hover:scale-110 transition-all"
       >
         <img className="w-9" src={linkedinIcon} alt="" /> Linkedin

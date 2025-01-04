@@ -13,9 +13,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex items-center justify-center bg-gradient-to-br from-black to-aboutBg h-100vh p-6 md:h-70vh lg:h-100vh lg:p-0"
+      className="flex items-center justify-center bg-gradient-to-b from-spaceColor to-darkPurple p-6 md:h-70vh lg:p-0"
     >
-      <div className="flex flex-col content-between bg-grayBg shadow-aboutContentShadow p-6 lg:p-12 rounded-3xl shadow-aboutContentBoxShadow gap-14 lg:w-aboutWidth lg:h-aboutHeight">
+      <div className="flex flex-col content-between bg-grayBg shadow-aboutContentBoxShadow  p-6 lg:p-12 rounded-3xl gap-14 lg:w-aboutWidth lg:h-aboutHeight">
         <div>
           <p className="leading-5 indent-5 mb-1">
             Sou um desenvolvedor fluente em inglês, cursante de Análise e

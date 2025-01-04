@@ -6,9 +6,9 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="flex flex-col items-center p-3 lg:h-100vh bg-gradient-to-r from-darkPurple to-lightPurple md:pb-9 lg:pb-0"
+      className="flex flex-col items-center p-3  bg-gradient-to-b from-darkPurple to-lightPurple md:pb-9 lg:pb-0"
     >
-      <div className="w-52 text-center text-3xl p-12">
+      <div className="w-52 text-center text-3xl p-6">
         <h1>Meus Projetos</h1>
       </div>
       <nav class="h-full flex flex-col md:flex lg:flex-row gap-12 justify-center items-center">
