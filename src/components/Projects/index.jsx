@@ -12,7 +12,7 @@ export default function Projects() {
       <div className="w-52 text-center text-2xl p-6">
         <h1>Meus Projetos</h1>
       </div>
-      <nav class="h-full flex flex-col md:flex lg:flex-row gap-12 justify-center items-center">
+      <nav class="h-full flex flex-col md:flex xl:flex-row gap-12 justify-center items-center">
         <ProjectCard
           title="Gamestore"
           image={gamestore}

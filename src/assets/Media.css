@@ -46,11 +46,15 @@
 }
 @media (min-width: 1024px) {
   #projects {
-    height: 750px;
     padding-bottom: 50px;
   }
   #about {
     padding-top: 50px;
     height: 65vh;
+  }
+}
+@media (min-width: 1280px) {
+  #projects {
+    height: 750px;
   }
 }
