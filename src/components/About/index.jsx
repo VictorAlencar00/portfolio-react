@@ -15,7 +15,7 @@ export default function About() {
       id="about"
       className="flex items-center justify-center bg-gradient-to-b from-spaceColor to-darkPurple p-6 md:h-70vh lg:p-0"
     >
-      <div className="flex flex-col content-between bg-grayBg shadow-aboutContentBoxShadow  p-6 lg:p-12 rounded-3xl gap-14 lg:w-aboutWidth lg:h-aboutHeight">
+      <div className="flex flex-col content-between bg-grayBg shadow-aboutContentBoxShadow p-6 lg:p-12 rounded-3xl gap-14 lg:w-aboutWidth xl:h-aboutHeight">
         <div>
           <p className="leading-5 indent-5 mb-1">
             Sou um desenvolvedor fluente em inglês, cursante de Análise e

@@ -50,10 +50,13 @@
   }
   #about {
     padding-top: 50px;
-    height: 65vh;
+    height: 90vh;
   }
 }
 @media (min-width: 1280px) {
+  #about {
+    height: 65vh;
+  }
   #projects {
     height: 750px;
   }
