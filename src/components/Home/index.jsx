@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex flex-col gap-6 text-center md:text-left items-center md:items-start">
         <div>
-          <p className="text-lg text-gray-300">Olá, eu sou</p>
+          <p className="text-lg text-gray-300">Olá, me chamo</p>
           <h1 className="text-4xl lg:text-6xl font-bold my-1">
             Victor de S. Alencar
           </h1>
