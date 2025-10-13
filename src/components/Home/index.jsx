@@ -1,93 +1,88 @@
-import profileImage from './imgs/profileImage.jpg';
 import githubIcon from './imgs/githubIcon.png';
 import linkedinIcon from './imgs/linkedin-icon.png';
+import profileImage from './imgs/profileImage.jpg';
 import spaceBackGround from './imgs/space-backGround.jpg';
 
-import React from 'react';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
-
+import { Cursor, useTypewriter } from 'react-simple-typewriter';
 export default function Home() {
-  const [text, cursor] = useTypewriter({
-    words: ['Front-End', 'React', 'Angular'],
+  const [text] = useTypewriter({
+    words: ['Full-stack', 'Angular', 'Java', 'Ionic', 'React'],
     loop: true,
     typeSpeed: 120,
-    deleteSpeed: 120,
+    deleteSpeed: 80,
   });
 
   return (
     <section
       id="home"
-      className="flex justify-center items-center gap-24 bg-cover h-100vh"
-      style={{ backgroundImage: `url(${spaceBackGround})` }}
+      className="min-h-screen flex flex-col md:flex-row justify-center items-center gap-10 md:gap-16 px-6 pt-24 pb-12 text-white"
+      style={{
+        backgroundImage: `url(${spaceBackGround})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <img
-        className="h-64 w-64 lg:h-96 lg:w-96 rounded-full border-solid border-white border-2 hover:scale-110 transition-all profile_image md:mx-4 lg:mx-0"
+        className="h-64 w-64 lg:h-80 lg:w-80 rounded-full object-cover border-4 border-cyan-400 shadow-lg shadow-cyan-500/30 hover:scale-105 transition-transform duration-300"
         src={profileImage}
-        alt="profile"
+        alt="Foto de perfil de Victor Alencar"
       />
-      <div className="flex flex-col gap-5 ">
-        <div className="sm:text-3xl">
-          <p className="hidden text-sm sm:text-l">Olá, me chamo</p>
-          <h2 className="text-center text-2xl sm:text-3xl lg:text-5xl">
+
+      <div className="flex flex-col gap-6 text-center md:text-left items-center md:items-start">
+        <div>
+          <p className="text-lg text-gray-300">Olá, eu sou</p>
+          <h1 className="text-4xl lg:text-6xl font-bold my-1">
             Victor de S. Alencar
-          </h2>
-          <p className="hidden text-sm sm:text-lg">e sou um</p>
-          <h3 className="w-80 text-2xl sm:text-2x2">
-            Desenvolvedor
+          </h1>
+          <h2 className="text-2xl lg:text-3xl text-gray-200 h-10">
+            Desenvolvedor{' '}
             <span
-              className={`text-cyan-500 ml-2 ${text[0] === 'F' ? 'text-white' : ''} ${text[0] === 'A' ? 'text-angularColor' : ''}`}
+              className={`font-semibold ${text.startsWith('A') ? 'text-angularColor' : 'text-cyan-400'}`}
             >
               {text}
-              <Cursor cursorBlinking={cursor} />
             </span>
-          </h3>
+            <Cursor cursorStyle="_" />
+          </h2>
         </div>
-        <div className="flex gap-2 justify-center sm:justify-normal">
+
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="https://drive.google.com/file/d/1oocnpNG_hKmnTsbACJ7pNFN3oJ6uvq02/view?usp=sharing"
+            href="https://drive.google.com/file/d/1N4gOXBntCzB9iEUq2TC2VYGEonBRrueQ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all hidden hover:bg-softWhite hover:text-black sm:flex items-center"
+            className="bg-cyan-500 text-white font-bold py-3 px-8 rounded-full border-2 border-transparent hover:bg-transparent hover:border-cyan-500 hover:scale-105 transition-all"
           >
-            <span className="p-2">Baixar Currículo</span>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/1oocnpNG_hKmnTsbACJ7pNFN3oJ6uvq02/view?usp=sharing"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-zinc-950 text-white h-12 p-1 rounded-3xl border border-solid hover:scale-110 transition-all sm:hidden hover:bg-softWhite hover:text-black flex items-center"
-          >
-            <span className="p-2">Currículo</span>
+            Baixar Currículo
           </a>
           <a
             href="#contacts"
-            className="bg-zinc-950 text-white p-1 rounded-3xl border border-solid hover:scale-110 transition-all hover:bg-softWhite hover:text-black
-            flex items-center"
+            className="bg-gray-700 text-white font-bold py-3 px-8 rounded-full border-2 border-transparent hover:bg-transparent hover:border-white hover:scale-105 transition-all"
           >
-            <span className="p-2">Contato</span>
+            Contato
           </a>
         </div>
-        <div className="flex gap-1 justify-center sm:justify-normal">
+
+        <div className="flex gap-4 mt-2">
           <a
+            href="https://github.com/VictorAlencar00"
             target="_blank"
             rel="noopener noreferrer"
-            href="https://github.com/VictorAlencar00"
           >
             <img
-              className="w-12 h-12 hover:scale-110 transition-all"
+              className="w-10 h-10 grayscale hover:grayscale-0 hover:scale-125 transition-all"
               src={githubIcon}
-              alt="user github"
+              alt="GitHub"
             />
           </a>
           <a
-            target="_blank"
-            rel="noreferrer"
             href="https://www.linkedin.com/in/victor-de-sousa-alencar-9a80ba244"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
-              className="w-12 h-12 hover:scale-110 transition-all"
+              className="w-10 h-10 grayscale hover:grayscale-0 hover:scale-125 transition-all"
               src={linkedinIcon}
-              alt="user linkedin"
+              alt="LinkedIn"
             />
           </a>
         </div>

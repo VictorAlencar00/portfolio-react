@@ -1,31 +1,33 @@
-import React from 'react';
-
 const ProjectCard = ({ title, image, repoLink, liveLink }) => {
   return (
-    <div className="bg-grayBg w-80 h-96 md:w-projectMdWidth md:h-projectMdHeight lg:w-96 lg:h-projectHeight gap-2 rounded-3xl flex flex-col items-center justify-center text-white border-4 border-darkGrayBg hover:scale-105 transition-all project">
+    <div className="group relative w-full h-80 rounded-2xl overflow-hidden shadow-lg border-2 border-gray-700/50">
       <img
-        className="w-64 h-64 md:w-374px md:h-374px lg:w-72 lg:h-72 rounded-3xl"
+        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         src={image}
-        alt={title}
+        alt={`Imagem do projeto ${title}`}
       />
-      <h3 className="text-center text-xl md:text-xl">{title}</h3>
-      <div className="flex gap-3 justify-center">
-        <a target="_blank" rel="nonopenner referer noreferrer" href={repoLink}>
-          <button className="bg-aboutBg text-softWhite h-11 p-3 flex items-center border-darkGrayBg border-solid border-x border-y rounded-3xl cursor-pointer m-1 transition-all hover:border-black hover:bg-softWhite hover:scale hover:text-black hover:scale-110">
-            Repositório
-          </button>
-        </a>
-        {liveLink && (
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center gap-4 p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+        <h3 className="text-2xl font-bold text-white">{title}</h3>
+        <div className="flex gap-4">
           <a
             target="_blank"
-            rel="nonopenner referer noreferrer"
-            href={liveLink}
+            rel="noopener noreferrer"
+            href={repoLink}
+            className="bg-gray-800 text-white py-2 px-5 rounded-full hover:bg-white hover:text-black transition-colors duration-300"
           >
-            <button className="bg-aboutBg text-softWhite h-11 p-3 flex items-center border-darkGrayBg border-solid border-x border-y rounded-3xl cursor-pointer m-1 transition-all hover:border-black hover:bg-softWhite hover:scale hover:text-black hover:scale-110">
-              Abrir Projeto
-            </button>
+            Repositório
           </a>
-        )}
+          {liveLink && (
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={liveLink}
+              className="bg-cyan-500 text-white py-2 px-5 rounded-full hover:bg-cyan-400 transition-colors duration-300"
+            >
+              Ver Projeto
+            </a>
+          )}
+        </div>
       </div>
     </div>
   );
