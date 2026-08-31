@@ -16,6 +16,17 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #edf4f5;
+  background: #07111f;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+::selection {
+  background: #67e8f9;
+  color: #07111f;
 }
 
 .text-angularColor {

@@ -11,8 +11,6 @@ import './index.css';
 export default function App() {
   return (
     <div className="App font-poppins">
-      {' '}
-      {/* Aplicando a fonte Poppins globalmente */}
       <Header />
       <main>
         <Home />
@@ -20,6 +18,9 @@ export default function App() {
         <Projects />
         <Contacts />
       </main>
+      <footer className="border-t border-white/10 bg-[#07111f] px-6 py-8 text-center text-sm text-slate-500">
+        © {new Date().getFullYear()} Victor Alencar. Desenvolvido com React.
+      </footer>
     </div>
   );
 }

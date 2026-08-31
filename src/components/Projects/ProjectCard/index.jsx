@@ -1,19 +1,43 @@
-const ProjectCard = ({ title, image, repoLink, liveLink }) => {
+const ProjectCard = ({
+  title,
+  image,
+  repoLink,
+  liveLink,
+  description,
+  stack,
+  label,
+}) => {
   return (
-    <div className="group relative w-full h-80 rounded-2xl overflow-hidden shadow-lg border-2 border-gray-700/50">
+    <article className="overflow-hidden rounded-3xl border border-white/10 bg-[#101f31] shadow-xl">
       <img
-        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        className="aspect-video w-full object-cover"
         src={image}
         alt={`Imagem do projeto ${title}`}
       />
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col items-center justify-center gap-4 p-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-        <h3 className="text-2xl font-bold text-white">{title}</h3>
-        <div className="flex gap-4">
+      <div className="p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-cyan-300">
+          {label}
+        </p>
+        <h3 className="mt-2 text-2xl font-bold text-white">{title}</h3>
+        <p className="mt-3 min-h-[72px] leading-6 text-slate-300">
+          {description}
+        </p>
+        <div className="mt-5 flex flex-wrap gap-2">
+          {stack.map(item => (
+            <span
+              key={item}
+              className="rounded-full bg-white/5 px-3 py-1 text-xs font-medium text-slate-300"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
+        <div className="mt-6 flex flex-wrap gap-3">
           <a
             target="_blank"
             rel="noopener noreferrer"
             href={repoLink}
-            className="bg-gray-800 text-white py-2 px-5 rounded-full hover:bg-white hover:text-black transition-colors duration-300"
+            className="rounded-full border border-white/20 px-5 py-2 text-sm font-semibold text-white transition hover:bg-white hover:text-[#07111f]"
           >
             Repositório
           </a>
@@ -22,14 +46,14 @@ const ProjectCard = ({ title, image, repoLink, liveLink }) => {
               target="_blank"
               rel="noopener noreferrer"
               href={liveLink}
-              className="bg-cyan-500 text-white py-2 px-5 rounded-full hover:bg-cyan-400 transition-colors duration-300"
+              className="rounded-full bg-cyan-300 px-5 py-2 text-sm font-bold text-[#07111f] transition hover:bg-cyan-200"
             >
               Ver Projeto
             </a>
           )}
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 

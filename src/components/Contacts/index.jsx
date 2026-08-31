@@ -2,7 +2,6 @@ import githubIcon from './imgs/githubForWhiteBackground.png';
 import gmailIcon from './imgs/gmail-icon.png';
 
 import linkedinIcon from './imgs/icons8-linkedin-48.png';
-import telegramIcon from './imgs/telegram-logo.png';
 import whatsappIcon from './imgs/whatsapp-icon.png';
 
 const contactLinks = [
@@ -22,32 +21,33 @@ const contactLinks = [
     icon: githubIcon,
     href: 'https://github.com/VictorAlencar00',
   },
-  {
-    name: 'Telegram',
-    icon: telegramIcon,
-    href: 'https://t.me/victoralencar00',
-  },
 ];
 
 export default function Contacts() {
   return (
-    <section id="contacts" className="py-24 px-6 bg-gray-100 text-center">
-      <div className="container mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 mb-4">
-          Entre em Contato
-        </h2>
-        <p className="text-gray-600 mb-12 max-w-lg mx-auto">
-          Estou disponível para novas oportunidades e colaborações. Sinta-se à
-          vontade para me contatar através dos canais abaixo.
+    <section
+      id="contacts"
+      className="bg-[#07111f] px-6 py-24 text-center lg:px-10"
+    >
+      <div className="mx-auto max-w-5xl rounded-[2rem] border border-white/10 bg-gradient-to-br from-cyan-300/10 to-indigo-500/10 px-6 py-14 sm:px-12">
+        <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+          Contato
         </p>
-        <div className="flex flex-wrap justify-center gap-5">
+        <h2 className="mt-4 text-4xl font-bold text-white sm:text-5xl">
+          Vamos construir algo relevante?
+        </h2>
+        <p className="mx-auto mb-10 mt-5 max-w-2xl leading-7 text-slate-300">
+          Estou aberto a projetos, oportunidades e conversas sobre produtos
+          digitais. Escolha o canal mais conveniente para você.
+        </p>
+        <div className="flex flex-wrap justify-center gap-4">
           {contactLinks.map(contact => (
             <a
               key={contact.name}
               href={contact.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-3 bg-white py-3 px-6 w-full sm:w-auto sm:min-w-[200px] justify-center rounded-lg shadow-md hover:shadow-xl hover:scale-105 transition-all text-gray-700 font-semibold border"
+              className="flex w-full items-center justify-center gap-3 rounded-full border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:border-cyan-300/50 hover:bg-white/10 sm:w-auto sm:min-w-[180px]"
             >
               <img
                 className="w-7 h-7"

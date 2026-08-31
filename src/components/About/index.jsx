@@ -53,46 +53,57 @@ const technologies = [
   { name: 'Tailwind CSS', icon: tailwindIcon, url: 'https://tailwindcss.com' },
 ];
 
-const TechnologyIcon = ({ name, icon, url }) => (
-  <a href={url} target="_blank" rel="noopener noreferrer" title={name}>
-    <img
-      className="w-12 h-12 object-contain grayscale hover:grayscale-0 hover:scale-125 transition-all duration-300"
-      src={icon}
-      alt={`${name} logo`}
-    />
-  </a>
+const TechnologyIcon = ({ name, icon }) => (
+  <div
+    className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/5 px-4 py-3"
+    title={name}
+  >
+    <img className="h-7 w-7 object-contain" src={icon} alt="" />
+    <span className="text-sm font-medium text-slate-200">{name}</span>
+  </div>
 );
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="py-24 px-6 bg-gradient-to-b from-spaceColor to-darkPurple flex items-center justify-center"
-    >
-      <div className="container max-w-5xl flex flex-col lg:flex-row items-center gap-12 lg:gap-16 bg-grayBg/50 backdrop-blur-md p-8 lg:p-12 rounded-2xl shadow-2xl">
-        <div className="lg:w-1/2 text-gray-300">
-          <h2 className="text-3xl font-bold text-white mb-6 text-center lg:text-left">
-            Sobre Mim
-          </h2>
-          <p className="leading-relaxed text-justify indent-8">
-            Formado em Análise e Desenvolvimento de Sistemas pela IESB, iniciei
-            minha jornada em desenvolvimento web em 2023, com o objetivo de
-            criar soluções completas e eficientes. Minha especialidade é o
-            front-end, com profundo conhecimento em Angular e Ionic para a
-            construção de interfaces reativas e aplicações multiplataforma. No
-            back-end, possuo sólida experiência com Java, Spring Boot e
-            PostgreSQL para o desenvolvimento de APIs RESTful. Essa combinação
-            de habilidades me permite atuar de forma eficaz em todo o ciclo de
-            vida de um projeto full stack. Sou fluente em inglês e também tenho
-            conhecimento em React.
+    <section id="about" className="bg-[#0a1626] px-6 py-24 lg:px-10">
+      <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-cyan-300">
+            Sobre mim
           </p>
+          <h2 className="mt-4 text-3xl font-bold leading-tight text-white sm:text-4xl">
+            Tecnologia com visão de produto.
+          </h2>
+          <p className="mt-6 leading-8 text-slate-300">
+            Sou formado em Análise e Desenvolvimento de Sistemas pelo IESB e
+            trabalho em todo o ciclo de uma aplicação: da experiência do usuário
+            à API, banco de dados e publicação. Minha trajetória começou com
+            HTML, CSS e JavaScript, evoluiu para Angular e Java e hoje inclui a
+            criação de produtos completos com Next.js.
+          </p>
+          <div className="mt-8 grid grid-cols-2 gap-4">
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <strong className="block text-xl text-white">Full-stack</strong>
+              <span className="mt-1 block text-sm text-slate-400">
+                Front-end, APIs e dados
+              </span>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <strong className="block text-xl text-white">
+                Inglês fluente
+              </strong>
+              <span className="mt-1 block text-sm text-slate-400">
+                Comunicação e documentação
+              </span>
+            </div>
+          </div>
         </div>
 
-        <div className="lg:w-1/2 w-full">
-          <h3 className="text-2xl font-bold text-white mb-8 text-center">
-            Tecnologias
+        <div>
+          <h3 className="mb-7 text-xl font-semibold text-white">
+            Tecnologias que utilizo
           </h3>
-          <div className="flex flex-wrap gap-x-6 gap-y-8 sm:gap-x-8 justify-center">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {technologies.map(tech => (
               <TechnologyIcon key={tech.name} {...tech} />
             ))}
