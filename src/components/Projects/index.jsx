@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -6,10 +7,14 @@ import {
   CreditCardIcon,
   DevicePhoneMobileIcon,
   LinkIcon,
+  MoonIcon,
+  SunIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
 import gamestore from './imgs/gamestore.png';
 import netflix from './imgs/netflix_gamified.png';
+import nexusPreview from './imgs/print_nexus.png';
+import nexusLightPreview from './imgs/print_nexus_light.png';
 import trainee from './imgs/trainee.png';
 import ProjectCard from './ProjectCard';
 
@@ -95,12 +100,14 @@ const projectData = [
 ];
 
 export default function Projects() {
+  const [previewTheme, setPreviewTheme] = useState('dark');
+
   return (
     <>
       <section id="nexusfit" className="bg-[#07111f] px-6 py-24 lg:px-10">
         <div className="mx-auto max-w-7xl">
-          <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-            <div>
+          <div className="flex flex-col gap-12">
+            <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-300">
                 Projeto em destaque • SaaS
               </p>
@@ -130,18 +137,60 @@ export default function Projects() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] border border-emerald-300/20 bg-gradient-to-br from-emerald-300/10 to-cyan-300/5 p-5">
-              <div className="flex aspect-[4/3] flex-col items-center justify-center rounded-[1.45rem] border border-dashed border-emerald-200/30 bg-[#0a1626] px-8 text-center">
-                <span className="flex h-16 w-16 items-center justify-center rounded-2xl bg-emerald-300 text-xl font-black text-[#07111f]">
-                  NF
-                </span>
-                <p className="mt-6 font-semibold text-white">
-                  Prévia do NexusFIT
+            <div className="mx-auto w-full max-w-5xl">
+              <div className="flex flex-wrap items-center justify-between gap-4 rounded-2xl border border-white/10 bg-white/[0.035] px-4 py-3 sm:px-5">
+                <p className="text-sm font-semibold text-slate-300">
+                  Dashboard NexusFIT
                 </p>
-                <p className="mt-2 max-w-xs text-sm leading-6 text-slate-400">
-                  Espaço preparado para receber as imagens reais do dashboard e
-                  da experiência mobile.
-                </p>
+                <div
+                  className="flex rounded-xl border border-white/10 bg-[#07111f] p-1"
+                  role="group"
+                  aria-label="Tema da prévia do NexusFIT"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setPreviewTheme('dark')}
+                    aria-pressed={previewTheme === 'dark'}
+                    className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${
+                      previewTheme === 'dark'
+                        ? 'bg-emerald-300 text-[#07111f] shadow-sm'
+                        : 'text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    <MoonIcon className="h-4 w-4" aria-hidden="true" />
+                    Escuro
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setPreviewTheme('light')}
+                    aria-pressed={previewTheme === 'light'}
+                    className={`flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold transition ${
+                      previewTheme === 'light'
+                        ? 'bg-white text-slate-900 shadow-sm'
+                        : 'text-slate-400 hover:text-white'
+                    }`}
+                  >
+                    <SunIcon className="h-4 w-4" aria-hidden="true" />
+                    Claro
+                  </button>
+                </div>
+              </div>
+
+              <div className="relative mt-4 aspect-[1920/906] overflow-hidden rounded-[1.45rem] border border-emerald-300/20 bg-[#0a1626] shadow-2xl shadow-emerald-950/30">
+                <img
+                  src={nexusPreview}
+                  alt="Dashboard geral do NexusFIT no modo escuro"
+                  className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${
+                    previewTheme === 'dark' ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
+                <img
+                  src={nexusLightPreview}
+                  alt="Dashboard geral do NexusFIT no modo claro"
+                  className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-300 ${
+                    previewTheme === 'light' ? 'opacity-100' : 'opacity-0'
+                  }`}
+                />
               </div>
             </div>
           </div>
