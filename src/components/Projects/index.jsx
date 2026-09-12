@@ -1,7 +1,3 @@
-import gamestore from './imgs/gamestore.png';
-import netflix from './imgs/netflix_gamified.png';
-import trainee from './imgs/trainee.png';
-import ProjectCard from './ProjectCard';
 import {
   BanknotesIcon,
   ChartBarIcon,
@@ -12,6 +8,10 @@ import {
   LinkIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
+import gamestore from './imgs/gamestore.png';
+import netflix from './imgs/netflix_gamified.png';
+import trainee from './imgs/trainee.png';
+import ProjectCard from './ProjectCard';
 
 const nexusFeatures = [
   {
@@ -109,8 +109,9 @@ export default function Projects() {
               </h2>
               <p className="mt-5 max-w-2xl text-xl leading-8 text-slate-300">
                 Gestão simples e inteligente para academias de artes marciais.
-                Um site completo que centraliza alunos, pagamentos, cobranças
-                e indicadores em uma experiência pensada para o celular dos alunos.
+                Um site completo que centraliza alunos, pagamentos, cobranças e
+                indicadores em uma experiência pensada para o celular dos
+                alunos.
               </p>
               <div className="mt-7 flex flex-wrap gap-2">
                 {['Next.js', 'SaaS', 'Pagamentos', 'Mobile-first'].map(item => (
@@ -178,8 +179,7 @@ export default function Projects() {
               Outros projetos
             </h2>
             <p className="mt-5 leading-7 text-slate-400">
-              Uma seleção que mostra minha evolução dos fundamentos do front-end
-              à construção de experiências com Angular.
+              Uma seleção que mostra minha evolução no front-end.
             </p>
           </div>
           <div className="mt-12 grid gap-7 md:grid-cols-2 xl:grid-cols-3">

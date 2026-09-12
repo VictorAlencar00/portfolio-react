@@ -1,15 +1,19 @@
 import angularIcon from './imgs/angular-icon.jpg';
 import cssIcon from './imgs/cssicon.png';
+import dockerIcon from './imgs/docker-icon.png';
 import gitIcon from './imgs/giticon.png';
 import htmlIcon from './imgs/htmlicon.png';
 import ionicIcon from './imgs/ionic-icon.svg';
 import javaIcon from './imgs/javaIcon.png';
 import javascriptIcon from './imgs/jsnewicon.png';
+import nextIcon from './imgs/next-icon.png';
+import postgresIcon from './imgs/postgresql-icon.svg';
 import reactIcon from './imgs/react-icon.png';
 import sassIcon from './imgs/sass-icon.png';
 import springIcon from './imgs/springIcon.png';
 import tailwindIcon from './imgs/tailwind-logo.png';
 import typescriptIcon from './imgs/typescript-icon.png';
+
 const technologies = [
   {
     name: 'HTML',
@@ -21,27 +25,24 @@ const technologies = [
     icon: cssIcon,
     url: 'https://developer.mozilla.org/pt-BR/docs/Web/CSS',
   },
-  {
-    name: 'Sass',
-    icon: sassIcon,
-    url: 'https://sass-lang.com/',
-  },
+
   {
     name: 'JavaScript',
     icon: javascriptIcon,
     url: 'https://developer.mozilla.org/pt-BR/docs/Web/JavaScript',
   },
-  { name: 'React', icon: reactIcon, url: 'https://react.dev' },
-  {
-    name: 'Ionic',
-    icon: ionicIcon,
-    url: 'https://ionicframework.com/',
-  },
-  { name: 'Angular', icon: angularIcon, url: 'https://angular.io' },
   {
     name: 'TypeScript',
     icon: typescriptIcon,
     url: 'https://www.typescriptlang.org',
+  },
+  { name: 'React', icon: reactIcon, url: 'https://react.dev' },
+  { name: 'Next.js', icon: nextIcon, url: 'https://nextjs.org/' },
+  { name: 'Angular', icon: angularIcon, url: 'https://angular.io' },
+  {
+    name: 'Ionic',
+    icon: ionicIcon,
+    url: 'https://ionicframework.com/',
   },
   {
     name: 'Java',
@@ -49,7 +50,18 @@ const technologies = [
     url: 'https://www.oracle.com/br/java/technologies/downloads/',
   },
   { name: 'Spring Boot', icon: springIcon, url: 'https://spring.io' },
+  {
+    name: 'PostgreSQL',
+    icon: postgresIcon,
+    url: 'https://www.postgresql.org/',
+  },
+  { name: 'Docker', icon: dockerIcon, url: 'https://docker.com' },
   { name: 'Git', icon: gitIcon, url: 'https://git-scm.com' },
+  {
+    name: 'Sass',
+    icon: sassIcon,
+    url: 'https://sass-lang.com/',
+  },
   { name: 'Tailwind CSS', icon: tailwindIcon, url: 'https://tailwindcss.com' },
 ];
 
@@ -85,7 +97,7 @@ export default function About() {
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <strong className="block text-xl text-white">Full-stack</strong>
               <span className="mt-1 block text-sm text-slate-400">
-                Front-end, APIs e dados
+                Front-end, Back-end, Banco de dados relacional e implantação.
               </span>
             </div>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
@@ -93,7 +105,7 @@ export default function About() {
                 Inglês fluente
               </strong>
               <span className="mt-1 block text-sm text-slate-400">
-                Comunicação e documentação
+                Comunicação e documentação.
               </span>
             </div>
           </div>
