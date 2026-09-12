@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './assets/App.css';
 import './assets/Media.css';
 import About from './components/About';
