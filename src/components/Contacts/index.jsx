@@ -37,8 +37,8 @@ export default function Contacts() {
           Vamos construir algo relevante?
         </h2>
         <p className="mx-auto mb-10 mt-5 max-w-2xl leading-7 text-slate-300">
-          Estou aberto a projetos, oportunidades e conversas sobre produtos
-          digitais. Escolha o canal mais conveniente para você.
+          Estou aberto a projetos, oportunidades e conversas sobre sistemas.
+          Escolha o meio mais conveniente para você.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           {contactLinks.map(contact => (

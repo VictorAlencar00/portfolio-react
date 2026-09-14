@@ -12,8 +12,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#07111f]/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-1">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#07111f]/80 px-6 backdrop-blur-xl lg:px-10">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between">
         <a
           href="#home"
           className="flex items-center gap-3 font-semibold text-white"

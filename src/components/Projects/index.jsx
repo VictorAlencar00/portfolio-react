@@ -1,16 +1,14 @@
-import { useState } from 'react';
 import {
   BanknotesIcon,
   ChartBarIcon,
   ChatBubbleLeftRightIcon,
-  CheckBadgeIcon,
   CreditCardIcon,
-  DevicePhoneMobileIcon,
   LinkIcon,
   MoonIcon,
   SunIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/outline';
+import { useState } from 'react';
 import gamestore from './imgs/gamestore.png';
 import netflix from './imgs/netflix_gamified.png';
 import nexusPreview from './imgs/print_nexus.png';
@@ -53,17 +51,6 @@ const nexusFeatures = [
     description: 'O aluno se matricula pelo celular e o gestor apenas aprova.',
     icon: LinkIcon,
   },
-  {
-    title: 'Bolsas e múltiplos planos',
-    description:
-      'Descontos, bolsistas, professores e modalidades sem limitações.',
-    icon: CheckBadgeIcon,
-  },
-  {
-    title: '100% mobile-first',
-    description: 'Feito para funcionar no tatame, na recepção ou em casa.',
-    icon: DevicePhoneMobileIcon,
-  },
 ];
 
 const projectData = [
@@ -73,7 +60,7 @@ const projectData = [
     label: 'Projeto Angular',
     description:
       'Experiência inspirada na Epic Games, com catálogo de jogos, simulação visual de compra e favoritos persistidos em cache.',
-    stack: ['Angular', 'TypeScript', 'Responsivo'],
+    stack: ['Angular', 'TypeScript'],
     repoLink: 'https://github.com/VictorAlencar00/angular-gamestore',
     liveLink: 'https://angular-gamestore.vercel.app/',
   },
@@ -100,7 +87,7 @@ const projectData = [
 ];
 
 export default function Projects() {
-  const [previewTheme, setPreviewTheme] = useState('dark');
+  const [previewTheme, setPreviewTheme] = useState('light');
 
   return (
     <>
@@ -121,7 +108,7 @@ export default function Projects() {
                 alunos.
               </p>
               <div className="mt-7 flex flex-wrap gap-2">
-                {['Next.js', 'SaaS', 'Pagamentos', 'Mobile-first'].map(item => (
+                {['Next.js', 'API de pagamentos'].map(item => (
                   <span
                     key={item}
                     className="rounded-full border border-emerald-300/20 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-200"
@@ -195,7 +182,7 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-16 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {nexusFeatures.map(feature => {
               const Icon = feature.icon;
               return (

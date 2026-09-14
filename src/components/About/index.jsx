@@ -89,11 +89,13 @@ export default function About() {
           <p className="mt-6 leading-8 text-slate-300">
             Sou formado em Análise e Desenvolvimento de Sistemas pelo IESB e
             trabalho em todo o ciclo de uma aplicação: da experiência do usuário
-            à API, banco de dados e publicação. Minha trajetória começou com
-            HTML, CSS e JavaScript, evoluiu para Angular e Java e hoje inclui a
-            criação de produtos completos com Next.js.
+            à API, banco de dados e publicação. Também tenho experiência com
+            servidores Linux, Docker, virtualização e monitoramento de redes.
+            Minha trajetória começou com HTML, CSS e JavaScript, evoluiu para
+            Angular e Java e hoje inclui a criação de produtos completos com
+            Next.js.
           </p>
-          <div className="mt-8 grid grid-cols-2 gap-4">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
             <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
               <strong className="block text-xl text-white">Full-stack</strong>
               <span className="mt-1 block text-sm text-slate-400">
@@ -106,6 +108,14 @@ export default function About() {
               </strong>
               <span className="mt-1 block text-sm text-slate-400">
                 Comunicação e documentação.
+              </span>
+            </div>
+            <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
+              <strong className="block text-xl text-white ">
+                Redes & infra
+              </strong>
+              <span className="mt-1 block text-sm text-slate-400">
+                TCP/IP, switching, routing, Zabbix e LibreNMS.
               </span>
             </div>
           </div>

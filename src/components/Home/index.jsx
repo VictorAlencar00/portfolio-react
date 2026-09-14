@@ -1,9 +1,17 @@
+import { useState } from 'react';
+import {
+  DocumentMagnifyingGlassIcon,
+  XMarkIcon,
+} from '@heroicons/react/24/outline';
 import githubIcon from './imgs/githubIcon.png';
 import linkedinIcon from './imgs/linkedin-icon.png';
 import profileImage from './imgs/profileImage.jpg';
 export default function Home() {
+  const [isResumePreviewOpen, setIsResumePreviewOpen] = useState(false);
+
   return (
-    <section
+    <>
+      <section
       id="home"
       className="relative isolate overflow-hidden bg-[#07111f] px-6 pb-20 pt-32 text-white sm:pt-40 lg:px-10 lg:pb-28"
     >
@@ -23,7 +31,7 @@ export default function Home() {
             artes marciais.
           </p>
 
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
             <a
               href="#nexusfit"
               className="rounded-full bg-cyan-300 px-7 py-3.5 text-center font-bold text-[#07111f] transition hover:bg-cyan-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
@@ -34,8 +42,19 @@ export default function Home() {
               href="#contacts"
               className="rounded-full border border-white/20 px-7 py-3.5 text-center font-bold text-white transition hover:border-white/50 hover:bg-white/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
-              Vamos conversar
+              Fale comigo
             </a>
+            <button
+              type="button"
+              onClick={() => setIsResumePreviewOpen(true)}
+              className="flex items-center justify-center gap-2 rounded-full border border-cyan-300/30 px-7 py-3.5 text-center font-bold text-cyan-200 transition hover:border-cyan-300/60 hover:bg-cyan-300/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-300"
+            >
+              <DocumentMagnifyingGlassIcon
+                className="h-5 w-5"
+                aria-hidden="true"
+              />
+              Ver currículo
+            </button>
           </div>
 
           <div className="mt-9 flex items-center gap-5 text-sm text-slate-400">
@@ -75,6 +94,40 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+
+      {isResumePreviewOpen && (
+        <div
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#020617]/85 p-4 backdrop-blur-sm sm:p-8"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="resume-preview-title"
+        >
+          <div className="flex h-full w-full max-w-5xl flex-col overflow-hidden rounded-2xl border border-white/15 bg-[#0a1626] shadow-2xl">
+            <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
+              <h2
+                id="resume-preview-title"
+                className="font-semibold text-white"
+              >
+                Currículo de Victor Alencar
+              </h2>
+              <button
+                type="button"
+                onClick={() => setIsResumePreviewOpen(false)}
+                className="rounded-lg p-2 text-slate-300 transition hover:bg-white/10 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300"
+                aria-label="Fechar prévia do currículo"
+              >
+                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              </button>
+            </div>
+            <iframe
+              title="Prévia do currículo de Victor Alencar"
+              src="/documents/curriculo-victor-alencar.pdf#view=FitH"
+              className="min-h-0 flex-1 bg-white"
+            />
+          </div>
+        </div>
+      )}
+    </>
   );
 }
